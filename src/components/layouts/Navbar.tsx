@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <div className="w-full">
       {/* Main Navbar */}
-      <nav className="bg-teal-500 text-white px-4 py-3">
+      <nav className="bg-teal-500 text-white px-4 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link
@@ -88,17 +88,17 @@ export default function Navbar() {
           {/* Right Actions */}
           <div className="flex items-center space-x-5 gap-2">
             {/* Phone */}
-            <div className="hidden sm:flex text-white hover:bg-teal-600 rounded-full">
+            <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
               <Phone className="h-8 w-8" />
             </div>
 
             {/* User Profile */}
-            <div className="hidden sm:flex text-white hover:bg-teal-600">
+            <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
               <CircleUserRound className="h-8 w-8" />
             </div>
 
             {/* Shopping Cart */}
-            <div className="relative text-white hover:bg-teal-600">
+            <div className="relative text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
               <ShoppingCart className="h-8 w-8" />
               {/* <Badge className="absolute -top-2 -right-2 bg-red-500 text-white text-xs min-w-[20px] h-5 flex items-center justify-center rounded-full">
                 5
@@ -106,7 +106,7 @@ export default function Navbar() {
             </div>
 
             {/* Doctor Button */}
-            <Button className="hidden sm:block bg-white text-teal-600 hover:bg-gray-100  px-4 py-2 rounded-2xl font-bold">
+            <Button className="hidden sm:block bg-white text-teal-600   px-4 py-2 rounded-2xl font-bold cursor-pointer hover:bg-green-100 hover:scale-105">
               Doctor
             </Button>
 
