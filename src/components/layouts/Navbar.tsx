@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <div className="w-full">
       {/* Main Navbar */}
-      <nav className="bg-teal-500 text-white px-4 py-4">
+      <nav className="bg-primary text-white px-4 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link
@@ -78,7 +78,7 @@ export default function Navbar() {
               />
               <Button
                 size="sm"
-                className="absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full bg-teal-500 hover:bg-teal-600 px-3"
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full bg-primary hover:bg-teal-600 px-3"
               >
                 <Search className="h-4 w-4" />
               </Button>
