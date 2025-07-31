@@ -15,8 +15,8 @@ export default function Footer() {
               </div>
               <h3 className="font-bold text-lg text-gray-800">PetNestNepal</h3>
             </div>
-            <div className="space-y-2 text-sm text-gray-600">
-              <p className="font-semibold">Get in touch</p>
+            <div className="space-y-2 text-sm  text-primary">
+              <p>Get in touch</p>
               <p>98638******</p>
               <p>petnestnepal@gmail.com</p>
             </div>
@@ -152,12 +152,11 @@ export default function Footer() {
 
           {/* Social Media & Apps */}
           <div>
-            <div className="mb-6">
-              <p className="text-sm text-gray-600 mb-3">
-                <span className="text-orange-500">
+            <div className="mb-6 flex flex-col items-center justify-center">
+              <p className="text-[8px] text-gray-600 mb-3">
+                <span className="text-orange-500 font-bold">
                   For your daily dose of happiness, follow us on
                 </span>{" "}
-                🐾
               </p>
               <div className="flex gap-3">
                 <Link href="#" className="text-blue-600 hover:text-blue-800">
@@ -175,7 +174,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 flex gap-2">
               <Link href="#" className="block">
                 <div>
                   <Image
