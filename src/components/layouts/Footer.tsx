@@ -4,20 +4,20 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-purple-50 p-8 ">
+    <footer className="bg-blue-50 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 text-center sm:text-left">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-teal-500 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-sm">🏠</span>
               </div>
               <h3 className="font-bold text-lg text-gray-800">PetNestNepal</h3>
             </div>
-            <div className="space-y-2 text-sm  text-primary">
-              <p>Get in touch</p>
-              <p>98638******</p>
+            <div className="text-primary space-y-2 text-sm">
+              <p className="font-semibold">Get in touch</p>
+              <p>98639****</p>
               <p>petnestnepal@gmail.com</p>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-800 mb-4">
               ONLINE SHOPPING
             </h4>
-            <ul className="space-y-2 text-[10px] font-bold text-gray-600">
+            <ul className="space-y-2 text-[8px] font-bold text-gray-600">
               <li>
                 <Link href="#" className="hover:text-gray-800">
                   Dogs
@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Explore */}
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">EXPLORE</h4>
-            <ul className="space-y-2 text-sm text-gray-600 text-[10px] font-bold">
+            <ul className="space-y-2 text-sm text-gray-600 text-[8px] font-bold">
               <li>
                 <Link href="#" className="hover:text-gray-800">
                   Supertalks Clinic
@@ -111,7 +111,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">QUICK LINKS</h4>
-            <ul className="space-y-2 text-sm text-gray-600 text-[10px] font-bold">
+            <ul className="space-y-2 text-sm text-gray-600 text-[8px] font-bold">
               <li>
                 <Link href="#" className="hover:text-gray-800">
                   My Account
@@ -157,8 +157,9 @@ export default function Footer() {
                 <span className="text-orange-500 font-bold">
                   For your daily dose of happiness, follow us on
                 </span>{" "}
+                🐾
               </p>
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center lg:justify-start">
                 <Link href="#" className="text-blue-600 hover:text-blue-800">
                   <Instagram className="w-5 h-5" />
                 </Link>
@@ -174,17 +175,15 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="space-y-2 flex gap-2">
+            <div className="space-y-2 flex flex-col items-center lg:items-start">
               <Link href="#" className="block">
-                <div>
-                  <Image
-                    src="/googlePlay.png"
-                    alt="Get it on Google Play"
-                    width={135}
-                    height={40}
-                    className="rounded"
-                  />
-                </div>
+                <Image
+                  src="/googlePlay.png"
+                  alt="Get it on Google Play"
+                  width={135}
+                  height={40}
+                  className="rounded"
+                />
               </Link>
               <Link href="#" className="block">
                 <Image
