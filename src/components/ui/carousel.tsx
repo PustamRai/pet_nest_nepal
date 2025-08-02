@@ -209,7 +209,7 @@ const CarouselPrevious = React.forwardRef<
       className={cn(
         "absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "-left-16 top-1/2 -translate-y-1/2" // Changed from -left-12 to -left-16
+          ? "-left-16 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -238,7 +238,7 @@ const CarouselNext = React.forwardRef<
       className={cn(
         "absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "-right-16 top-1/2 -translate-y-1/2" // Changed from -right-12 to -right-16
+          ? "-right-16 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -272,7 +272,10 @@ const CarouselDots = React.forwardRef<
     };
 
     api.on("select", onSelect);
-    return () => api.off("select", onSelect);
+    // Explicitly cast the return of the cleanup function to void
+    return () => {
+      api.off("select", onSelect) as unknown;
+    };
   }, [api]);
 
   const scrollTo = React.useCallback(
