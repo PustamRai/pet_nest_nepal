@@ -19,6 +19,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  autoplay?: boolean | number; // Added autoplay prop
 };
 
 type CarouselContextProps = {
@@ -54,6 +55,7 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      autoplay = false,
       ...props
     },
     ref
@@ -62,12 +64,13 @@ const Carousel = React.forwardRef<
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
-        loop: true, // Add this line for infinite loop
+        loop: true,
       },
       plugins
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
+    const autoplayRef = React.useRef<NodeJS.Timeout | null>(null);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -99,6 +102,24 @@ const Carousel = React.forwardRef<
       [scrollPrev, scrollNext]
     );
 
+    // Autoplay logic
+    const startAutoplay = React.useCallback(() => {
+      if (autoplay && api) {
+        const delay = typeof autoplay === "number" ? autoplay : 3000; // Default to 3 seconds
+        stopAutoplay(); // Clear any existing interval before starting a new one
+        autoplayRef.current = setInterval(() => {
+          api.scrollNext();
+        }, delay);
+      }
+    }, [autoplay, api]);
+
+    const stopAutoplay = React.useCallback(() => {
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current);
+        autoplayRef.current = null;
+      }
+    }, []);
+
     React.useEffect(() => {
       if (!api || !setApi) {
         return;
@@ -116,10 +137,19 @@ const Carousel = React.forwardRef<
       api.on("reInit", onSelect);
       api.on("select", onSelect);
 
+      // Autoplay event listeners
+      api.on("pointerDown", stopAutoplay);
+      api.on("select", startAutoplay); // Restart autoplay after any slide change (user or auto)
+
+      startAutoplay(); // Start autoplay on mount
+
       return () => {
         api?.off("select", onSelect);
+        api?.off("pointerDown", stopAutoplay);
+        api?.off("select", startAutoplay); // Clean up the select listener for autoplay
+        stopAutoplay(); // Clear interval on unmount
       };
-    }, [api, onSelect]);
+    }, [api, onSelect, startAutoplay, stopAutoplay]);
 
     return (
       <CarouselContext.Provider
@@ -272,7 +302,6 @@ const CarouselDots = React.forwardRef<
     };
 
     api.on("select", onSelect);
-    // Explicitly cast the return of the cleanup function to void
     return () => {
       api.off("select", onSelect) as unknown;
     };
