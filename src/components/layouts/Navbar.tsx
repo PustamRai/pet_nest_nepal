@@ -205,14 +205,17 @@ export default function Navbar() {
 
       {/* Category Navigation - Hidden on mobile, shown in mobile menu */}
       <div className="hidden md:block bg-gray-100 ">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-center max-h-7 bg-green-50">
+        <div className="w-[1400px] mx-auto px-4">
+          <div className="flex items-center justify-center max-h-11 bg-green-100">
             {categories.map((category) => (
               <DropdownMenu key={category.name}>
-                <DropdownMenuTrigger asChild>
+                <DropdownMenuTrigger
+                  asChild
+                  className=" hover:bg-red-300 border-0 border-none "
+                >
                   <Button
                     variant="ghost"
-                    className="text-gray-500 hover:text-teal-600 font-bold"
+                    className="text-gray-500 hover:text-teal-600 font-bold "
                   >
                     {category.name}
                     <ChevronDown className="ml-1 h-4 w-4" />

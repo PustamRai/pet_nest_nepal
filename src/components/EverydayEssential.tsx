@@ -64,7 +64,7 @@ const categories = [
 
 export function EverydayEssentials() {
   return (
-    <div className=" p-3 sm:p-4 lg:p-6 mx-auto max-w-6xl">
+    <div className=" p-3 sm:p-4 lg:p-6 mx-auto  sm:mt-6">
       {/* Header */}
       <div className="bg-secondary -mx-3 sm:-mx-4 lg:-mx-6 -mt-3 sm:-mt-4 lg:-mt-6 mb-4 sm:mb-6 py-3 sm:py-4 rounded-t-lg">
         <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-center text-gray-800">

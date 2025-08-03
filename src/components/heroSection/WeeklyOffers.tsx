@@ -17,7 +17,7 @@ const offers = [
     originalPrice: "₹2999",
     discountedPrice: "₹2040",
     discount: "32%",
-    image: "/placeholder.svg?height=120&width=100&text=Royal+Canin+2",
+    image: "/dog1.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const offers = [
     originalPrice: "₹2999",
     discountedPrice: "₹2040",
     discount: "32%",
-    image: "/placeholder.svg?height=120&width=100&text=Royal+Canin+3",
+    image: "/cat1.jpg",
   },
 ];
 
