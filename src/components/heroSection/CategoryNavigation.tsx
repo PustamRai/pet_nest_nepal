@@ -11,7 +11,7 @@ const categories = [
 export function CategoryNavigation() {
   return (
     <div className="bg-secondary rounded-2xl py-4 sm:py-6 mt-2">
-      <div className="flex justify-center items-center gap-3 sm:gap-4 lg:gap-8 flex-wrap px-4">
+      <div className="flex justify-evenly items-center gap-3 sm:gap-4 lg:gap-8 flex-wrap px-4">
         {categories.map((category, index) => (
           <div
             key={index}
