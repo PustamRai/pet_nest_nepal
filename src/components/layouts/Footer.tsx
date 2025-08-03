@@ -174,27 +174,6 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-
-            <div className="space-y-2 flex flex-col items-center lg:items-start">
-              <Link href="#" className="block">
-                <Image
-                  src="/googlePlay.png"
-                  alt="Get it on Google Play"
-                  width={135}
-                  height={40}
-                  className="rounded"
-                />
-              </Link>
-              <Link href="#" className="block">
-                <Image
-                  src="/appStore.png"
-                  alt="Download on the App Store"
-                  width={135}
-                  height={40}
-                  className="rounded"
-                />
-              </Link>
-            </div>
           </div>
         </div>
       </div>
