@@ -29,7 +29,7 @@ const offers = [
   },
 ];
 
-export function WeeklyOffers() {
+export function WeeklyOffersTest() {
   return (
     <div className="py-6 sm:py-8 ">
       <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 sm:max-h-96">
@@ -57,7 +57,7 @@ export function WeeklyOffers() {
                 <Card className="py-0">
                   <CardContent className="p-3 sm:p-4 pt-6 sm:pt-8">
                     <div className="text-center">
-                      <div className="relative h-40 w-full mx-auto mb-3">
+                      <div className="relative h-32 w-full mx-auto mb-3">
                         <Image
                           src={offer.image || "/placeholder.svg"}
                           alt={offer.title}
