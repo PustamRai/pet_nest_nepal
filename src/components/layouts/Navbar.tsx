@@ -19,7 +19,6 @@ import {
    DropdownMenuItem,
    DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Badge } from "@/components/ui/badge";
 
 const categories = [
    {
@@ -52,6 +51,7 @@ export default function Navbar() {
       <div className="w-full">
          {/* Main Navbar */}
          <nav className="bg-primary text-white px-4 py-4">
+         <nav className="bg-teal-500 text-white px-4 py-4">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                {/* Logo */}
                <Link
@@ -67,6 +67,42 @@ export default function Navbar() {
                      PetNestNepal
                   </span>
                </Link>
+
+               {/* Search Bar - Hidden on mobile */}
+               <div className="hidden md:flex flex-1 max-w-md mx-8">
+                  <div className="relative max-w-2xl">
+                     <Input
+                        type="text"
+                        placeholder="Search for products..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full pl-4 pr-12 py-2 rounded-full border-0 text-gray-900 placeholder-gray-500 bg-neutral-50"
+                     />
+                     <Button
+                        size="sm"
+                        className="absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full bg-teal-500 hover:bg-teal-600 px-3"
+                     >
+                        <Search className="h-4 w-4" />
+                     </Button>
+                  </div>
+               </div>
+  return (
+    <div className="w-full">
+      {/* Main Navbar */}
+      <nav className="bg-primary text-white px-4 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="flex items-center space-x-2 text-xl font-bold"
+          >
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <div className="w-6 h-6 bg-teal-500 rounded-sm flex items-center justify-center">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <span className="hidden sm:block font-mono">PetNestNepal</span>
+          </Link>
 
                {/* Search Bar - Hidden on mobile */}
                <div className="hidden md:flex flex-1 max-w-md mx-8">
@@ -98,6 +134,12 @@ export default function Navbar() {
                   <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
                      <CircleUserRound className="h-8 w-8" />
                   </div>
+                  <Link
+                     href="/login"
+                     className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors"
+                  >
+                     <CircleUserRound className="h-8 w-8" />
+                  </Link>
 
                   {/* Shopping Cart */}
                   <div className="relative text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
@@ -105,6 +147,8 @@ export default function Navbar() {
                      {/* <Badge className="absolute -top-2 -right-2 bg-red-500 text-white text-xs min-w-[20px] h-5 flex items-center justify-center rounded-full">
                 5
               </Badge> */}
+                        5
+                     </Badge> */}
                   </div>
 
                   {/* Doctor Button */}
@@ -220,6 +264,17 @@ export default function Navbar() {
                            <Button
                               variant="ghost"
                               className="text-gray-500 hover:text-teal-600 font-bold"
+            <div className="w-[1400px] mx-auto px-4">
+               <div className="flex items-center justify-center max-h-11 bg-green-100">
+                  {categories.map((category) => (
+                     <DropdownMenu key={category.name}>
+                        <DropdownMenuTrigger
+                           asChild
+                           className="hover:bg-teal-100"
+                        >
+                           <Button
+                              variant="ghost"
+                              className="text-gray-500 hover:text-teal-600 font-bold "
                            >
                               {category.name}
                               <ChevronDown className="ml-1 h-4 w-4" />
