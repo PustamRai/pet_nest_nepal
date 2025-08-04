@@ -85,6 +85,42 @@ export default function Navbar() {
                      </Button>
                   </div>
                </div>
+  return (
+    <div className="w-full">
+      {/* Main Navbar */}
+      <nav className="bg-primary text-white px-4 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="flex items-center space-x-2 text-xl font-bold"
+          >
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <div className="w-6 h-6 bg-teal-500 rounded-sm flex items-center justify-center">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <span className="hidden sm:block font-mono">PetNestNepal</span>
+          </Link>
+
+          {/* Search Bar - Hidden on mobile */}
+          <div className="hidden md:flex flex-1 max-w-md mx-8">
+            <div className="relative max-w-2xl">
+              <Input
+                type="text"
+                placeholder="Search for products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-4 pr-12 py-2 rounded-full border-0 text-gray-900 placeholder-gray-500 bg-neutral-50"
+              />
+              <Button
+                size="sm"
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full bg-primary hover:bg-teal-600 px-3"
+              >
+                <Search className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
 
                {/* Right Actions */}
                <div className="flex items-center space-x-5 gap-2">
