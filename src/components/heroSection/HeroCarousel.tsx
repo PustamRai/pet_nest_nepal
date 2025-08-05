@@ -7,6 +7,7 @@ import {
    CarouselPrevious,
    CarouselDots,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export default function ResponsiveBannerCarousel() {
    // Your image URLs - replace these with your actual images
@@ -27,9 +28,11 @@ export default function ResponsiveBannerCarousel() {
                      <Card className="border-0 shadow-lg overflow-hidden py-0 rounded-2xl">
                         <CardContent className="p-0 overflow-hidden">
                            <div className="aspect-[16/8] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[20/8] xl:aspect-[24/8] w-full overflow-hidden">
-                              <img
+                              <Image
                                  src={image || "/placeholder.svg"}
                                  alt={`Slide ${index + 1}`}
+                                 width={100}
+                                 height={200}
                                  className="w-full h-full object-cover rounded-2xl overflow-hidden"
                               />
                            </div>

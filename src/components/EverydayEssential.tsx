@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const categories = [
    // Top row
    {
@@ -80,9 +82,11 @@ export function EverydayEssentials() {
                   className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
                >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-white rounded-lg shadow-sm border border-gray-200 flex items-center justify-center mb-2 sm:mb-3 overflow-hidden">
-                     <img
+                     <Image
                         src={category.image || "/placeholder.svg"}
                         alt={category.name}
+                        width={100}
+                        height={200}
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 object-contain"
                      />
                   </div>
