@@ -23,14 +23,14 @@ export default function ResponsiveBannerCarousel() {
          <Carousel className="w-full max-w-7xl" autoplay={5000}>
             <CarouselContent>
                {images.map((image, index) => (
-                  <CarouselItem key={index}>
-                     <Card className="border-0 shadow-lg overflow-hidden py-0 rounded-none">
-                        <CardContent className="p-0">
-                           <div className="aspect-[16/8] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[20/8] xl:aspect-[24/8] w-full">
+                  <CarouselItem key={index} className="overflow-hidden">
+                     <Card className="border-0 shadow-lg overflow-hidden py-0 rounded-2xl">
+                        <CardContent className="p-0 overflow-hidden">
+                           <div className="aspect-[16/8] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[20/8] xl:aspect-[24/8] w-full overflow-hidden">
                               <img
                                  src={image || "/placeholder.svg"}
                                  alt={`Slide ${index + 1}`}
-                                 className="w-full h-full object-cover"
+                                 className="w-full h-full object-cover rounded-2xl overflow-hidden"
                               />
                            </div>
                         </CardContent>
