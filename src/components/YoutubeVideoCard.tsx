@@ -2,8 +2,8 @@
 
 import { CardContent } from "@/components/ui/card";
 import { Video } from "@/types/video.types";
-import { Skeleton } from "@/components/ui/skeleton";
-import { useState } from "react";
+// import { Skeleton } from "@/components/ui/skeleton";
+// import { useState } from "react";
 
 interface YouTubeVideoCardProps {
    videoId: Video[];
@@ -18,7 +18,7 @@ export function YouTubeVideoCard({
    description,
    aspectRatio = "9:16",
 }: YouTubeVideoCardProps) {
-   const [isLoading, setIsLoading] = useState(true);
+   // const [isLoading, setIsLoading] = useState(true);
 
    const getPaddingBottom = () => {
       switch (aspectRatio) {
@@ -48,19 +48,20 @@ export function YouTubeVideoCard({
                      className="relative w-full rounded-b-lg overflow-hidden"
                      style={{ paddingBottom: getPaddingBottom() }}
                   >
-                     {isLoading && (
+                     {/* {isLoading && (
                         <Skeleton className="absolute inset-0 rounded-b-lg" />
-                     )}
+                     )} */}
                      <iframe
                         src={`https://www.youtube.com/embed/${video.id}`}
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         loading="lazy"
                         allowFullScreen
-                        className={`absolute top-0 left-0 w-full h-full ${
-                           isLoading ? "hidden" : ""
-                        }`} // Hide iframe until loaded
-                        onLoad={() => setIsLoading(false)}
+                        className="absolute top-0 left-0 w-full h-full"
+                        // className={`absolute top-0 left-0 w-full h-full ${
+                        //    isLoading ? "hidden" : ""
+                        // }`} // Hide iframe until loaded
+                        // onLoad={() => setIsLoading(false)}
                      ></iframe>
                   </div>
                   {description && (
