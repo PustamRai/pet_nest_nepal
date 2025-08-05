@@ -1,6 +1,7 @@
 import { MainHeroBannerSection } from "@/components/heroSection/Main-hero-banner-section";
 import { EverydayEssentials } from "@/components/EverydayEssential";
 import TopSelling from "@/components/TopSelling";
+import BestSellerForCats from "@/components/BestSellerForCats";
 
 export default function HomePage() {
    return (
@@ -8,6 +9,7 @@ export default function HomePage() {
          <MainHeroBannerSection />
          <EverydayEssentials />
          <TopSelling />
+         <BestSellerForCats />
       </div>
    );
 }
