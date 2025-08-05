@@ -31,8 +31,8 @@ export default function ResponsiveBannerCarousel() {
                               <Image
                                  src={image || "/placeholder.svg"}
                                  alt={`Slide ${index + 1}`}
-                                 width={100}
-                                 height={200}
+                                 width={600}
+                                 height={500}
                                  className="w-full h-full object-cover rounded-2xl overflow-hidden"
                               />
                            </div>
