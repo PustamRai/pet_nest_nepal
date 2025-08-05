@@ -12,7 +12,7 @@ interface CardComponentsProps {
 export function CardComponents({ products, title = "" }: CardComponentsProps) {
    return (
       <div className="">
-         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center  mb-6 sm:mb-8 lg:mb-10 bg-secondary text-gray-800 rounded py-4">
+         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-center  mb-6 sm:mb-8 lg:mb-10 bg-secondary text-gray-800 rounded py-4">
             {title}
          </h2>
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
