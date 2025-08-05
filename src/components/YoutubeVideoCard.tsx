@@ -57,7 +57,7 @@ export function YouTubeVideoCard({
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         loading="lazy"
                         allowFullScreen
-                        className="absolute top-0 left-0 w-full h-full"
+                        className="absolute top-0 left-0 w-full h-full rounded-2xl"
                         // className={`absolute top-0 left-0 w-full h-full ${
                         //    isLoading ? "hidden" : ""
                         // }`} // Hide iframe until loaded
