@@ -3,8 +3,7 @@ import { EverydayEssentials } from "@/components/EverydayEssential";
 import TopSelling from "@/components/TopSelling";
 import BestSellerForCats from "@/components/BestSellerForCats";
 import BestSellerForDogs from "@/components/BestSellerForDogs";
-import CatVideo from "@/components/CatVideo";
-("@/components/CatVideo");
+import CatVideo from "@/components/videosection/CatVideo";
 
 export default function HomePage() {
    return (
