@@ -42,8 +42,8 @@ export function YouTubeVideoCard({
          {/* <Card className="w-full h-full flex flex-col overflow-hidden"> */}
 
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-            {videoId.map((video, idx) => (
-               <CardContent key={idx} className="flex-1 p-0 rounded-2xl">
+            {videoId.map((video) => (
+               <CardContent key={video.id} className="flex-1 p-0 rounded-2xl">
                   <div
                      className="relative w-full rounded-b-lg overflow-hidden"
                      style={{ paddingBottom: getPaddingBottom() }}
