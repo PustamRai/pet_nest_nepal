@@ -16,7 +16,7 @@ const videoList: Video[] = [
    },
 ];
 
-export default function YoutubeVideo() {
+export default function CatVideo() {
    return (
       <div className="py-6 sm:py-8 mx-auto">
          <YouTubeVideoCard

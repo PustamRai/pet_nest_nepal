@@ -3,7 +3,8 @@ import { EverydayEssentials } from "@/components/EverydayEssential";
 import TopSelling from "@/components/TopSelling";
 import BestSellerForCats from "@/components/BestSellerForCats";
 import BestSellerForDogs from "@/components/BestSellerForDogs";
-import YoutubeVideo from "@/components/YoutubeVideo";
+import CatVideo from "@/components/CatVideo";
+("@/components/CatVideo");
 
 export default function HomePage() {
    return (
@@ -13,7 +14,7 @@ export default function HomePage() {
          <TopSelling />
          <BestSellerForCats />
          <BestSellerForDogs />
-         <YoutubeVideo />
+         <CatVideo />
       </div>
    );
 }
