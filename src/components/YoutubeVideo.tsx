@@ -3,13 +3,13 @@ import { YouTubeVideoCard } from "./YoutubeVideoCard";
 
 const videoList: Video[] = [
    {
-      id: "4F1dbot6a8A",
+      id: "NsMKvVdEPkw",
    },
    {
-      id: "4F1dbot6a8A",
+      id: "KId3r5dVwGk",
    },
    {
-      id: "4F1dbot6a8A",
+      id: "y6kwZPbBw8o",
    },
    {
       id: "4F1dbot6a8A",
@@ -21,7 +21,7 @@ export default function YoutubeVideo() {
       <div className="py-6 sm:py-8 mx-auto">
          <YouTubeVideoCard
             videoId={videoList}
-            title="Videos of Cats"
+            title="Video For Cat Parents"
             // title={video.title}
             // description={video.description}
             // aspectRatio={
