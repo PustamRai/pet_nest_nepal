@@ -33,6 +33,8 @@ export function SignupForm() {
       // In a real app, you'd send this to your backend
    };
 
+   console.log("");
+
    return (
       <Card className="w-full max-w-md mx-auto">
          <CardHeader className="text-center">
