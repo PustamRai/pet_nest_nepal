@@ -95,7 +95,9 @@ export default function Navbar() {
 
                   {/* User Profile */}
                   <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
-                     <CircleUserRound className="h-8 w-8" />
+                     <Link href="/login">
+                        <CircleUserRound className="h-8 w-8" />
+                     </Link>
                   </div>
 
                   {/* Shopping Cart */}
