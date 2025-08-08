@@ -26,11 +26,8 @@ export function SignupForm() {
          return;
       }
       // Simulate signup
-      setMessage(
-         "Signup successful! (This is a demo, no actual signup occurred)"
-      );
+      setMessage("Signup successful");
       console.log("Signup attempt:", { name, email, password });
-      // In a real app, you'd send this to your backend
    };
 
    console.log("");
@@ -77,7 +74,7 @@ export function SignupForm() {
                      onChange={(e) => setPassword(e.target.value)}
                   />
                </div>
-               <Button type="submit" className="w-full">
+               <Button type="submit" className="w-full bg-primary">
                   Sign Up
                </Button>
                {message && (
@@ -86,7 +83,7 @@ export function SignupForm() {
             </form>
             <div className="mt-4 text-center text-sm">
                Already have an account?{" "}
-               <Link href="/auth/login" className="underline">
+               <Link href="/login" className="underline">
                   Login
                </Link>
             </div>
