@@ -1,11 +1,12 @@
-import React from "react";
+import { LoginForm } from "@/components/auth/LoginForm";
+import WidthWrapper from "@/components/WidthWrapper";
 
-function LoginPage() {
-  return (
-    <div className="min-h-screen">
-      <h2>login page</h2>
-    </div>
-  );
+export default function LoginPage() {
+   return (
+      <WidthWrapper>
+         <div className="flex py-10 sm:mt-10 sm:mb-10 items-center justify-center max-w-md mx-auto">
+            <LoginForm />
+         </div>
+      </WidthWrapper>
+   );
 }
-
-export default LoginPage;
