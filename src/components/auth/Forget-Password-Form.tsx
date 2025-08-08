@@ -27,9 +27,7 @@ export function ForgotPasswordForm() {
 
       setIsSubmitting(true);
 
-      toast.success(
-         `If an account with ${email} exists, a password reset link has been sent.`
-      );
+      toast.success("password reset link has been sent.");
       setEmail("");
       setIsSubmitting(false);
    };
@@ -51,7 +49,7 @@ export function ForgotPasswordForm() {
                   <Input
                      id="email"
                      type="email"
-                     placeholder="m@example.com"
+                     placeholder="m@gmail.com"
                      required
                      value={email}
                      onChange={(e) => setEmail(e.target.value)}
