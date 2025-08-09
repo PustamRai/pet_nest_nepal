@@ -4,9 +4,9 @@ import WidthWrapper from "@/components/WidthWrapper";
 export default function AboutPage() {
    return (
       <WidthWrapper>
-         <div>
+         <main>
             <AboutSection />
-         </div>
+         </main>
       </WidthWrapper>
    );
 }
