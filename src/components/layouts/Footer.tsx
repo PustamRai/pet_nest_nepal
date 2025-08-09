@@ -120,7 +120,7 @@ export default function Footer() {
                      QUICK LINKS
                   </h4>
                   <ul className="space-y-2 text-sm text-gray-600 text-[8px] font-bold">
-                     <li>
+                     {/* <li>
                         <Link href="#" className="hover:text-gray-800">
                            My Account
                         </Link>
@@ -128,6 +128,14 @@ export default function Footer() {
                      <li>
                         <Link href="#" className="hover:text-gray-800">
                            Track Your Order
+                        </Link>
+                     </li> */}
+                     <li>
+                        <Link
+                           href="/privacy-policy"
+                           className="hover:text-gray-800"
+                        >
+                           Privacy Policy
                         </Link>
                      </li>
                      <li>
@@ -138,11 +146,6 @@ export default function Footer() {
                      <li>
                         <Link href="#" className="hover:text-gray-800">
                            Return policy
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href="#" className="hover:text-gray-800">
-                           Privacy Policy
                         </Link>
                      </li>
                      <li>
