@@ -1,6 +1,6 @@
 import { PrivacyPolicySection } from "@/components/policySection/privacy-policy-section";
 import WidthWrapper from "@/components/WidthWrapper";
-import { PolicySection } from "@/types/privacy-policy";
+import { PolicySection } from "@/types/policy";
 
 export default function PrivacyPolicyPage() {
    const policyContent: PolicySection[] = [
