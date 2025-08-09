@@ -62,6 +62,9 @@ export function YouTubeVideoCard({
                         //    isLoading ? "hidden" : ""
                         // }`} // Hide iframe until loaded
                         // onLoad={() => setIsLoading(false)}
+
+                        // dynamic
+                        // suspense
                      ></iframe>
                   </div>
                   {description && (
