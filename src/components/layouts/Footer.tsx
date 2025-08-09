@@ -67,6 +67,11 @@ export default function Footer() {
                   <h4 className="font-semibold text-gray-800 mb-4">EXPLORE</h4>
                   <ul className="space-y-2 text-sm text-gray-600 text-[8px] font-bold">
                      <li>
+                        <Link href="/about" className="hover:text-gray-800">
+                           About Pet Nest Nepal
+                        </Link>
+                     </li>
+                     <li>
                         <Link href="#" className="hover:text-gray-800">
                            Supertalks Clinic
                         </Link>
