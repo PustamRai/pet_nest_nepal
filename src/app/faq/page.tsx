@@ -1,11 +1,11 @@
-import { AboutSection } from "@/components/AboutSection";
+import { FaqSection } from "@/components/FAQSection";
 import WidthWrapper from "@/components/WidthWrapper";
 
-export default function AboutPage() {
+export default function FaqPage() {
    return (
       <WidthWrapper>
          <main>
-            <AboutSection />
+            <FaqSection />
          </main>
       </WidthWrapper>
    );

@@ -69,7 +69,7 @@ export function AboutSection() {
    const cardAnimationStartIndex = 2; // 0 for title, 1 for image, so cards start from 2
 
    return (
-      <section className="py-6 sm:px-2">
+      <section>
          <motion.div
             className="text-center mb-10 md:mb-12"
             custom={0}
