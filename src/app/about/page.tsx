@@ -46,8 +46,8 @@ export default function AboutPage() {
                Founded in [Year], Pet Nest Nepal started with a simple idea: to
                create a one-stop shop where pet owners could find everything
                they need, backed by genuine care and knowledge. From humble
-               beginnings, we've grown into a beloved community hub, thanks to
-               the loyalty of our customers and the dedication of our team.
+               beginnings, we&apos;ve grown into a beloved community hub, thanks
+               to the loyalty of our customers and the dedication of our team.
             </p>
          ),
       },
