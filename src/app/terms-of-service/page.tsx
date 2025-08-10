@@ -1,6 +1,7 @@
 import { PolicyDisplaySection } from "@/components/policySection/policy-display-section";
 import type { PolicySection } from "@/types/policy";
 
+// fix name correction
 export default function TermsOfServicePage() {
    const termsOfServiceContent: PolicySection[] = [
       {
