@@ -155,7 +155,10 @@ export default function Footer() {
                         </Link>
                      </li>
                      <li>
-                        <Link href="#" className="hover:text-gray-800">
+                        <Link
+                           href="/terms-of-service"
+                           className="hover:text-gray-800"
+                        >
                            Terms of Service
                         </Link>
                      </li>
