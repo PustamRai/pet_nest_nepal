@@ -1,9 +1,9 @@
-import { PrivacyPolicySection } from "@/components/policySection/privacy-policy-section";
+import { PolicyDisplaySection } from "@/components/policySection/policy-display-section";
 import WidthWrapper from "@/components/WidthWrapper";
 import { PolicySection } from "@/types/policy";
 
 export default function PrivacyPolicyPage() {
-   const policyContent: PolicySection[] = [
+   const privacyPolicyContent: PolicySection[] = [
       {
          title: "1. Information We Collect",
          content: (
@@ -179,7 +179,11 @@ export default function PrivacyPolicyPage() {
    return (
       <WidthWrapper>
          <main>
-            <PrivacyPolicySection policySections={policyContent} />
+            <PolicyDisplaySection
+               pageTitle="Privacy Policy"
+               pageDescription="Your privacy is important to us. This policy explains how we collect, use, and protect your personal information."
+               policyContent={privacyPolicyContent}
+            />
          </main>
       </WidthWrapper>
    );
