@@ -147,7 +147,10 @@ export default function Footer() {
                         </Link>
                      </li>
                      <li>
-                        <Link href="#" className="hover:text-gray-800">
+                        <Link
+                           href="/return-policy"
+                           className="hover:text-gray-800"
+                        >
                            Return policy
                         </Link>
                      </li>
