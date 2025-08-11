@@ -1,5 +1,5 @@
 import { PolicyDisplaySection } from "@/components/policySection/policy-display-section";
-import type { PolicySection } from "@/types/policy";
+import type { PolicySection } from "@/types/policy.types";
 
 // fix name correction
 export default function TermsOfServicePage() {

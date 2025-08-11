@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, type Variants } from "framer-motion";
-import { PolicySection } from "@/types/policy";
+import { PolicySection } from "@/types/policy.types";
 
 const fadeUp: Variants = {
    hidden: { opacity: 0, y: 40 },

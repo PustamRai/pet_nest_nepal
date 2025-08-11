@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import WidthWrapper from "@/components/WidthWrapper";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import { defaultFooterData } from "@/lib/footer-data"; // Import the default footer data
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
@@ -30,7 +31,8 @@ export default function RootLayout({
                <main>{children}</main>
                <Toaster />
             </WidthWrapper>
-            <Footer />
+            <Footer {...defaultFooterData} />{" "}
+            {/* Pass the default footer data as props */}
          </body>
       </html>
    );
