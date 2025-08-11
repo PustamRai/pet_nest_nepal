@@ -42,7 +42,7 @@ export default function Footer({
                         {companyName}
                      </h3>
                   </div>
-                  <div className="space-y-2 text-sm text-gray-300">
+                  <div className="space-y-2 text-sm text-primary">
                      <p className="font-semibold">Get in touch</p>
                      <p>{contactPhone}</p>
                      <p>{contactEmail}</p>

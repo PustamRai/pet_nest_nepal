@@ -28,7 +28,7 @@ export const defaultFooterData: FooterProps = {
             { label: "Our story", href: "/about" },
             { label: "FAQs", href: "/faq" },
             { label: "Blog", href: "#" },
-            { label: "Contact Us", href: "#" },
+            { label: "Contact Us", href: "/contact" },
             { label: "Supertalks Companion", href: "#" },
             { label: "Supertalks Vet", href: "#" },
          ],
