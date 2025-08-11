@@ -1,6 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import WidthWrapper from "@/components/WidthWrapper";
-import type { PolicySection } from "@/types/policy";
+import type { PolicySection } from "@/types/policy.types";
 
 export default function AboutPage() {
    const aboutContent: PolicySection[] = [

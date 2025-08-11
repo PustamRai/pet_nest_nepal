@@ -1,11 +1,11 @@
-"use client"; // This component needs to be a Client Component to use Framer Motion
+"use client";
 
-import type { PolicySection } from "@/types/policy"; // Import the PolicySection type
+import type { PolicySection } from "@/types/policy.types";
 
 interface PolicyDisplaySectionProps {
-   pageTitle: string; // Main title for the page (e.g., "Refund Policy")
-   pageDescription: string; // Main description for the page
-   policyContent: PolicySection[]; // Array of policy sections
+   pageTitle: string;
+   pageDescription: string;
+   policyContent: PolicySection[];
 }
 
 export function PolicyDisplaySection({
@@ -15,7 +15,7 @@ export function PolicyDisplaySection({
 }: PolicyDisplaySectionProps) {
    return (
       <section>
-         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="max-w-4xl mx-auto lg:px-8">
             {/* Section Title and Description */}
             <div className="text-center mb-10 md:mb-12">
                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
