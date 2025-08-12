@@ -1,14 +1,14 @@
 import { SignupSection } from "@/components/auth/signup/signup-section";
-// import WidthWrapper from "@/components/WidthWrapper";
+import WidthWrapper from "@/components/WidthWrapper";
 import React from "react";
 
 function SignupPage() {
    return (
-      // <WidthWrapper>
-      <main>
-         <SignupSection />
-      </main>
-      // </WidthWrapper>
+      <WidthWrapper>
+         <main>
+            <SignupSection />
+         </main>
+      </WidthWrapper>
    );
 }
 
