@@ -1,11 +1,14 @@
-import { SignupForm } from "@/components/auth/SignupForm";
+import { SignupSection } from "@/components/auth/signup/signup-section";
+// import WidthWrapper from "@/components/WidthWrapper";
 import React from "react";
 
 function SignupPage() {
    return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50 max-w-md mx-auto">
-         <SignupForm />
-      </div>
+      // <WidthWrapper>
+      <main>
+         <SignupSection />
+      </main>
+      // </WidthWrapper>
    );
 }
 
