@@ -20,6 +20,7 @@ export default function HomePage() {
          <BestSellerForDogs />
          <DogVideo />
          <PetServices />
+         <TestimonialsPage />
       </WidthWrapper>
    );
 }
