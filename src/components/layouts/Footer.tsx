@@ -17,7 +17,10 @@ export default function Footer({
          <ul className="space-y-2 text-sm text-gray-300">
             {section.links.map((link, i) => (
                <li key={i}>
-                  <Link href={link.href} className="hover:text-white">
+                  <Link
+                     href={link.href}
+                     className="hover:text-white hover:underline"
+                  >
                      {link.label}
                   </Link>
                </li>
