@@ -88,6 +88,8 @@ export default function TestimonialsCard({
                                        "/placeholder.svg?height=48&width=48&query=pet owner portrait"
                                     }
                                     alt={`${testimonial.name} with ${testimonial.petName}`}
+                                    width={100}
+                                    height={100}
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                  />
                               </div>
