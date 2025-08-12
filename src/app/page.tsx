@@ -5,10 +5,12 @@ import BestSellerForCats from "@/components/BestSellerForCats";
 import BestSellerForDogs from "@/components/BestSellerForDogs";
 import CatVideo from "@/components/videosection/CatVideo";
 import DogVideo from "@/components/videosection/DogVideo";
+import PetServices from "@/components/petServices/pet-services";
+import WidthWrapper from "@/components/WidthWrapper";
 
 export default function HomePage() {
    return (
-      <div className="mx-auto sm:px-10">
+      <WidthWrapper>
          <MainHeroBannerSection />
          <EverydayEssentials />
          <TopSelling />
@@ -16,6 +18,7 @@ export default function HomePage() {
          <CatVideo />
          <BestSellerForDogs />
          <DogVideo />
-      </div>
+         <PetServices />
+      </WidthWrapper>
    );
 }
