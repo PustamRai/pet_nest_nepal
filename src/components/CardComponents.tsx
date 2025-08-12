@@ -19,7 +19,7 @@ export function CardComponents({ products, title = "" }: CardComponentsProps) {
             {products.map((product) => (
                <Card
                   key={product.id}
-                  className="relative overflow-hidden rounded-lg shadow-md"
+                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                >
                   {/* Promotional Banner */}
                   <div className="absolute top-0 left-0 right-0 bg-cyan-400 text-white text-xs sm:text-sm font-medium text-center py-1 sm:py-2 px-2 z-10">
@@ -32,7 +32,7 @@ export function CardComponents({ products, title = "" }: CardComponentsProps) {
                         alt={product.title}
                         width={80}
                         height={120}
-                        className="sm:w-[100px] sm:h-[150px] object-contain mb-3 sm:mb-4"
+                        className="sm:w-[100px] sm:h-[150px] object-contain mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-105"
                      />
                      <h3 className="text-sm sm:text-base font-semibold text-gray-800 mb-1 sm:mb-2 line-clamp-2 min-h-[2.5rem] sm:min-h-[3rem]">
                         {product.title}

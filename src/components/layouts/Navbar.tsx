@@ -19,6 +19,7 @@ import {
    DropdownMenuItem,
    DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 const categories = [
    {
@@ -57,10 +58,14 @@ export default function Navbar() {
                   href="/"
                   className="flex items-center space-x-2 text-xl font-bold"
                >
-                  <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                     <div className="w-6 h-6 bg-teal-500 rounded-sm flex items-center justify-center">
-                        <div className="w-3 h-3 bg-white rounded-full"></div>
-                     </div>
+                  <div className="h-10 w-10">
+                     <Image
+                        src="/favicon_io/logo.svg"
+                        alt="E-Learning Platform Logo"
+                        width={400}
+                        height={400}
+                        className="h-full w-full object-cover rounded-md"
+                     />
                   </div>
                   <span className="hidden sm:block font-mono">
                      PetNestNepal
@@ -95,7 +100,9 @@ export default function Navbar() {
 
                   {/* User Profile */}
                   <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
-                     <CircleUserRound className="h-8 w-8" />
+                     <Link href="/login">
+                        <CircleUserRound className="h-8 w-8" />
+                     </Link>
                   </div>
 
                   {/* Shopping Cart */}
