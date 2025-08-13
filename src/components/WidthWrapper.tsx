@@ -8,7 +8,7 @@ export default function WidthWrapper({
 }) {
    return (
       <div
-         className={`max-w-7xl mx-auto px-2 py-5 sm:py-7 lg:py-14 sm:px-6 lg:px-8 ${
+         className={`max-w-7xl mx-auto px-4 py-5 sm:py-7 lg:py-14 sm:px-6 lg:px-8 ${
             className || ""
          }`}
       >
