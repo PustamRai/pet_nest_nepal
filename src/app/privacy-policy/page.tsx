@@ -1,5 +1,4 @@
 import { PolicyDisplaySection } from "@/components/policySection/policy-display-section";
-import WidthWrapper from "@/components/WidthWrapper";
 import { PolicySection } from "@/types/policy.types";
 
 export default function PrivacyPolicyPage() {
@@ -177,14 +176,12 @@ export default function PrivacyPolicyPage() {
    ];
 
    return (
-      <WidthWrapper>
-         <main>
-            <PolicyDisplaySection
-               pageTitle="Privacy Policy"
-               pageDescription="Your privacy is important to us. This policy explains how we collect, use, and protect your personal information."
-               policyContent={privacyPolicyContent}
-            />
-         </main>
-      </WidthWrapper>
+      <main>
+         <PolicyDisplaySection
+            pageTitle="Privacy Policy"
+            pageDescription="Your privacy is important to us. This policy explains how we collect, use, and protect your personal information."
+            policyContent={privacyPolicyContent}
+         />
+      </main>
    );
 }
