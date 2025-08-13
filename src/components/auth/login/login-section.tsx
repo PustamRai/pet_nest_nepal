@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { LoginForm } from "./login-form";
 
 interface LoginSectionProps {
@@ -23,9 +24,11 @@ export function LoginSection({
                <div className="relative w-full max-w-lg lg:max-w-none">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-3xl blur-3xl transform -rotate-6"></div>
                   <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-700">
-                     <img
+                     <Image
                         src={imageUrl || "/placeholder.svg"}
                         alt={imageAlt}
+                        width={400}
+                        height={450}
                         className="w-full h-64 sm:h-80 lg:h-96 xl:h-[500px] object-cover"
                      />
                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
