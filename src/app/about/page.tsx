@@ -1,5 +1,4 @@
 import { AboutSection } from "@/components/AboutSection";
-import WidthWrapper from "@/components/WidthWrapper";
 import type { PolicySection } from "@/types/policy.types";
 
 export default function AboutPage() {
@@ -54,10 +53,8 @@ export default function AboutPage() {
    ];
 
    return (
-      <WidthWrapper>
-         <main>
-            <AboutSection aboutSections={aboutContent} />
-         </main>
-      </WidthWrapper>
+      <main>
+         <AboutSection aboutSections={aboutContent} />
+      </main>
    );
 }

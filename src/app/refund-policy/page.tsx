@@ -1,5 +1,4 @@
 import { PolicyDisplaySection } from "@/components/policySection/policy-display-section";
-import WidthWrapper from "@/components/WidthWrapper";
 import type { PolicySection } from "@/types/policy.types";
 
 export default function RefundPolicyPage() {
@@ -76,14 +75,12 @@ export default function RefundPolicyPage() {
    ];
 
    return (
-      <WidthWrapper>
-         <main>
-            <PolicyDisplaySection
-               pageTitle="Refund Policy"
-               pageDescription="Understand our guidelines for refunds and how to initiate a return for your purchases."
-               policyContent={refundPolicyContent}
-            />
-         </main>
-      </WidthWrapper>
+      <main>
+         <PolicyDisplaySection
+            pageTitle="Refund Policy"
+            pageDescription="Understand our guidelines for refunds and how to initiate a return for your purchases."
+            policyContent={refundPolicyContent}
+         />
+      </main>
    );
 }
