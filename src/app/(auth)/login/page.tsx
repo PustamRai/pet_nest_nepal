@@ -1,9 +1,9 @@
-import { LoginForm } from "@/components/auth/LoginForm";
+import { LoginSection } from "@/components/auth/login/login-section";
 
 export default function LoginPage() {
    return (
-      <main className="flex py-10 mt-6 mb-24 sm:mt-10 sm:mb-32 items-center justify-center max-w-md mx-auto">
-         <LoginForm />
+      <main>
+         <LoginSection />
       </main>
    );
 }
