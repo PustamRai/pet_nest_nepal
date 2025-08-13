@@ -12,12 +12,12 @@ interface SignupSectionProps {
 
 export function SignupSection({
    title = "Join Our Pet Care Community",
-   subtitle = "Sign up today and give your furry friends the care they deserve. Access exclusive services, book appointments, and connect with certified pet care professionals.",
+   subtitle,
    imageUrl = "/signup-image/dog1.jpg",
    imageAlt = "Happy pets with veterinarian",
 }: SignupSectionProps) {
    return (
-      <section>
+      <section className="lg:px-24">
          <div className="grid min-h-screen lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Image Column */}
             <div className="order-2 lg:order-1 flex items-center justify-center">
