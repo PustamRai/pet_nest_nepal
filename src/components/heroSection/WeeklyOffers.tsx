@@ -5,7 +5,7 @@ const WeeklyOffersProducts: Product[] = [
    {
       id: 1,
       promo: "Extra 4% off on orders above NRS 2499",
-      image: "/rabbit.png",
+      image: "/dog.png",
       title: "Applod Yak & Roll Peanut Butter & Banana Yak Chew...",
       brand: "Applod",
       originalPrice: "₹249",
@@ -27,7 +27,7 @@ const WeeklyOffersProducts: Product[] = [
    {
       id: 3,
       promo: "Extra 4% off on orders above NRS 2499",
-      image: "/rabbit.png",
+      image: "/dog.png",
       title: "Festive Red Dog Rakhi - Handmade with Tassel, Fabr...",
       brand: "Paper Me",
       originalPrice: "",
