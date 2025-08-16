@@ -12,7 +12,7 @@ interface CardComponentsProps {
 export function CardComponents({ products, title = "" }: CardComponentsProps) {
    return (
       <div className="">
-         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-center mb-6 sm:mb-8 lg:mb-10 bg-secondary text-gray-800 rounded py-4">
+         <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6 sm:mb-8 lg:mb-10 bg-gradient-to-r from-[#752c52] to-[#723445] bg-clip-text text-transparent py-4">
             {title}
          </h2>
 
@@ -37,7 +37,7 @@ export function CardComponents({ products, title = "" }: CardComponentsProps) {
                            height={90}
                            className="w-[60px] h-[90px] object-contain mb-3 transition-transform duration-300 group-hover:scale-105"
                         />
-                        <h3 className="text-xs font-semibold text-gray-800 mb-2 line-clamp-2 min-h-[2.5rem]">
+                        <h3 className="text-xs font-normal text-gray-800 mb-2 line-clamp-2 min-h-[2.5rem]">
                            {product.title}
                         </h3>
                         <p className="text-xs text-gray-600 mb-2 min-h-[1rem]">
@@ -106,7 +106,7 @@ export function CardComponents({ products, title = "" }: CardComponentsProps) {
                            height={90}
                            className="sm:w-[80px] sm:h-[120px] md:w-[100px] md:h-[150px] object-contain mb-2 sm:mb-3 md:mb-4 transition-transform duration-300 group-hover:scale-105"
                         />
-                        <h3 className="text-xs sm:text-sm md:text-base font-semibold text-gray-800 mb-1 sm:mb-2 line-clamp-2 min-h-[2.5rem] sm:min-h-[3rem] md:min-h-[3.5rem]">
+                        <h3 className="text-xs sm:text-sm md:text-base font-normal text-gray-800 mb-1 sm:mb-2 line-clamp-2 min-h-[2.5rem] sm:min-h-[3rem] md:min-h-[3.5rem]">
                            {product.title}
                         </h3>
                         <p className="text-xs sm:text-sm text-gray-600 mb-1 sm:mb-2 md:mb-3 min-h-[1rem]">

@@ -1,4 +1,4 @@
-import { CardComponents } from "../CardComponents";
+import { CardComponents } from "./CardComponents";
 import { Product } from "@/types/product.types";
 
 const WeeklyOffersProducts: Product[] = [
