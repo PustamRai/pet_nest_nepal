@@ -1,6 +1,6 @@
 import React from "react";
 // import { CategoryNavigation } from "./CategoryNavigation";
-import { WeeklyOffers } from "./WeeklyOffers";
+import { WeeklyOffers } from "../cardSection/WeeklyOffers";
 import ResponsiveBannerCarousel from "./HeroCarousel";
 import PetBreed from "../shopPetBreeds/pet-breeds";
 

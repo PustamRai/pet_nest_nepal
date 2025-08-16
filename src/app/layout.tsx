@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+// import { Inter, Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import WidthWrapper from "@/components/WidthWrapper";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
-import { defaultFooterData } from "@/lib/footer-data"; // Import the default footer data
+import { defaultFooterData } from "@/lib/footer-data";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+// const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+// const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+const poppins = Poppins({
+   subsets: ["latin"],
+   weight: ["400", "600", "700"], // adjust as needed
+});
 
 export const metadata: Metadata = {
    title: "Pet Nest Nepal",
@@ -25,7 +30,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         <body className={`${inter.className} ${nunito.className} antialiased`}>
+         <body className={`${poppins.className} antialiased`}>
             <Navbar />
             <WidthWrapper>
                <main>{children}</main>
