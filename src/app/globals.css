@@ -155,3 +155,8 @@ html {
 .snap-center {
   scroll-snap-align: center;
 }
+
+/* title color */
+.text-title {
+  @apply bg-gradient-to-r from-[#752c52] to-[#723445];
+}

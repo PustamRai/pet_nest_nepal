@@ -45,7 +45,7 @@ export default function TestimonialsCard({
          <div className="max-w-7xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
-               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+               <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6 sm:mb-8 lg:mb-10 text-title bg-clip-text text-transparent py-4">
                   {title}
                </h2>
                <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

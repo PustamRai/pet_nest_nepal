@@ -68,7 +68,7 @@ export function EverydayEssentials() {
    return (
       <div className=" p-3 sm:p-4 lg:p-6 mx-auto  sm:mt-6">
          {/* Header */}
-         <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6 sm:mb-8 lg:mb-10 bg-gradient-to-r from-[#752c52] to-[#723445] bg-clip-text text-transparent py-4">
+         <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6 sm:mb-8 lg:mb-10 text-title bg-clip-text text-transparent py-4">
             Everyday essentials
          </h2>
 

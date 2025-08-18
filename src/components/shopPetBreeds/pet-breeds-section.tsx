@@ -27,7 +27,7 @@ export default function PetBreedsSection({
          <div className="max-w-7xl mx-auto">
             {/* Header */}
             <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-               <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6  bg-gradient-to-r from-[#752c52] to-[#723445] bg-clip-text text-transparent py-4">
+               <h2 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6  text-title bg-clip-text text-transparent py-4">
                   {title}
                </h2>
                <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
