@@ -26,7 +26,7 @@ export default function PetServicesCard({
          <div className="max-w-7xl mx-auto">
             {/* Header Section */}
             <div className="text-center mb-8 sm:mb-12">
-               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+               <h1 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-center mb-6 sm:mb-8 lg:mb-10 text-title bg-clip-text text-transparent py-4">
                   {title}
                </h1>
                <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 max-w-2xl mx-auto">
