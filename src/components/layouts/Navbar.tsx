@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
    DropdownMenu,
@@ -94,9 +95,9 @@ export default function Navbar() {
                {/* Right Actions */}
                <div className="flex items-center space-x-5 gap-2">
                   {/* Phone */}
-                  <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
+                  {/* <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
                      <Phone className="h-8 w-8" />
-                  </div>
+                  </div> */}
 
                   {/* User Profile */}
                   <div className="hidden sm:flex text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
@@ -106,17 +107,21 @@ export default function Navbar() {
                   </div>
 
                   {/* Shopping Cart */}
-                  <div className="relative text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
-                     <ShoppingCart className="h-8 w-8" />
-                     {/* <Badge className="absolute -top-2 -right-2 bg-red-500 text-white text-xs min-w-[20px] h-5 flex items-center justify-center rounded-full">
-                5
-              </Badge> */}
-                  </div>
+                  <Link href="/cart">
+                     <div className="relative text-white hover:text-green-100 h-9 w-9 rounded-full cursor-pointer transition-colors">
+                        <ShoppingCart className="h-8 w-8" />
+                        <Badge className="absolute -top-1 -right-1 bg-gray-800 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                           5
+                        </Badge>
+                     </div>
+                  </Link>
 
                   {/* Doctor Button */}
-                  <Button className="hidden sm:block bg-white text-teal-600   px-4 py-2 rounded-2xl font-bold cursor-pointer hover:bg-green-100 hover:scale-105">
-                     Doctor
-                  </Button>
+                  <Link href="/doctor">
+                     <Button className="hidden sm:block bg-white text-teal-600   px-4 py-2 rounded-2xl font-bold cursor-pointer hover:bg-green-100 hover:scale-105">
+                        Doctor
+                     </Button>
+                  </Link>
 
                   {/* Mobile Menu Toggle */}
                   <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -205,9 +210,12 @@ export default function Navbar() {
                                  <CircleUserRound className="h-4 w-4 mr-2" />
                                  My Account
                               </Button>
-                              <Button className="bg-teal-600 hover:bg-teal-700 text-white">
+                              <Link
+                                 href="/doctor"
+                                 className="bg-teal-600 hover:bg-teal-700 text-white"
+                              >
                                  Doctor
-                              </Button>
+                              </Link>
                            </div>
                         </div>
                      </SheetContent>
@@ -219,13 +227,13 @@ export default function Navbar() {
          {/* Category Navigation - Hidden on mobile, shown in mobile menu */}
          <div className="hidden md:block bg-gray-100 ">
             <div className="max-w-7xl mx-auto px-4">
-               <div className="flex items-center justify-center max-h-7 bg-green-50">
+               <div className="flex items-center justify-center h-14  bg-green-50">
                   {categories.map((category) => (
                      <DropdownMenu key={category.name}>
                         <DropdownMenuTrigger asChild>
                            <Button
                               variant="ghost"
-                              className="text-gray-500 hover:text-teal-600 font-bold"
+                              className="text-gray-500 hover:text-teal-600 font-semibold lg:text-lg"
                            >
                               {category.name}
                               <ChevronDown className="ml-1 h-4 w-4" />
@@ -248,7 +256,7 @@ export default function Navbar() {
                   ))}
                   <Link
                      href="/stores"
-                     className="text-gray-500 hover:text-teal-600 font-bold text-xs px-3 py-2 rounded transition-colors"
+                     className="text-gray-500 hover:text-teal-600 font-bold text-xs px-3 py-2 rounded transition-colors lg:text-[13px] hover:underline"
                   >
                      Our Stores
                   </Link>
