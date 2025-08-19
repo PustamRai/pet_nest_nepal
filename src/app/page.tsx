@@ -9,17 +9,17 @@ import PetServices from "@/components/petServices/pet-services";
 import TestimonialsPage from "@/components/testimonialsSection/testimonial";
 
 export default function HomePage() {
-   return (
-      <div>
-         <MainHeroBannerSection />
-         <EverydayEssentials />
-         <TopSelling />
-         <BestSellerForCats />
-         <CatVideo />
-         <BestSellerForDogs />
-         <DogVideo />
-         <PetServices />
-         <TestimonialsPage />
-      </div>
-   );
+  return (
+    <div>
+      <MainHeroBannerSection />
+      <EverydayEssentials />
+      <TopSelling />
+      <BestSellerForCats />
+      <CatVideo />
+      <BestSellerForDogs />
+      <DogVideo />
+      <PetServices />
+      <TestimonialsPage />
+    </div>
+  );
 }
