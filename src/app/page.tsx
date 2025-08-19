@@ -7,19 +7,20 @@ import CatVideo from "@/components/videosection/CatVideo";
 import DogVideo from "@/components/videosection/DogVideo";
 import PetServices from "@/components/petServices/pet-services";
 import TestimonialsPage from "@/components/testimonialsSection/testimonial";
+import VendorUploadQR from "@/components/Vendor-UploadQR";
 
 export default function HomePage() {
-   return (
-      <div>
-         <MainHeroBannerSection />
-         <EverydayEssentials />
-         <TopSelling />
-         <BestSellerForCats />
-         <CatVideo />
-         <BestSellerForDogs />
-         <DogVideo />
-         <PetServices />
-         <TestimonialsPage />
-      </div>
-   );
+  return (
+    <div>
+      <MainHeroBannerSection />
+      <EverydayEssentials />
+      <TopSelling />
+      <BestSellerForCats />
+      <CatVideo />
+      <BestSellerForDogs />
+      <DogVideo />
+      <PetServices />
+      <TestimonialsPage />
+    </div>
+  );
 }
