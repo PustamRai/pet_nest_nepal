@@ -65,7 +65,6 @@ export default function EmptyCart({
   featuresBackgroundColor = "bg-green-50",
   featuresTextColor = "text-green-800",
 }: EmptyCartProps) {
-  const router = useRouter();
   // const handleContinueShopping = () => {
   //   if (onContinueShopping) {
   //     onContinueShopping();
