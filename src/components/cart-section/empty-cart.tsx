@@ -12,7 +12,6 @@ import {
   Pill,
 } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const defaultTrustBadges: TrustBadge[] = [
   {
