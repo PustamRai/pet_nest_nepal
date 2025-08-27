@@ -1,5 +1,5 @@
 import { connectDB } from "@/lib/db";
-import { Image } from "@/models/image";
+import { Image } from "@/models/image.models";
 import { NextResponse } from "next/server";
 
 export async function GET() {
