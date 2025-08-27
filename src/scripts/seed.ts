@@ -1,10 +1,10 @@
 import { connectDB } from "@/lib/db";
-import { Image } from "@/models/image";
+import { Image } from "@/models/image.models";
 
 async function seedData() {
   await connectDB();
 
-  const data = await Image.insertMany([
+  await Image.insertMany([
     { url: "/dogandkitten.webp?height=400&width=800" },
     { url: "/cat2.jpg" },
     { url: "/dog1.jpg" },
