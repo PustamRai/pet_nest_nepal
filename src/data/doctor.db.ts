@@ -15,10 +15,10 @@ export interface Doctor {
 export const doctorsData: Doctor[] = [
   {
     id: "dr-001",
-    name: "Dr. Prithivi Jung",
+    name: "Dr. Prithivi ",
     specialization: "Small Animal Veterinarian",
     experience: 8,
-    image: "/professional-veterinarian-doctor-with-stethoscope.png",
+    image: "/doctor-image/prithivi.jpeg",
     rating: 4.8,
     availableDays: [
       "Monday",
@@ -48,10 +48,10 @@ export const doctorsData: Doctor[] = [
   },
   {
     id: "dr-002",
-    name: "Dr. Priya Thapa",
+    name: "Dr. Dixit",
     specialization: "Exotic Animal Specialist",
     experience: 6,
-    image: "/female-veterinarian-doctor-with-birds-and-exotic-p.png",
+    image: "/doctor-image/dixit.jpeg",
     rating: 4.9,
     availableDays: [
       "Tuesday",
